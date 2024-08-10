@@ -27,7 +27,7 @@
         </a>
 
 
-		<li class="sidebar-item active">
+		<li class="sidebar-item ">
 						<a class="sidebar-link" href="index.html">
               <i class="align-middle" data-feather="sliders"></i> <span class="align-middle">Resumen general</span>
             </a>
@@ -38,25 +38,25 @@
 						ATC
 					</li>
 
-					<li class="sidebar-item">
+					<li class="sidebar-item ">
 						<a class="sidebar-link" href="FIAT.html">
               <i class="align-middle" data-feather="command"></i> <span class="align-middle">FIAT</span>
             </a>
 					</li>
 
-					<li class="sidebar-item">
+					<li class="sidebar-item ">
 						<a class="sidebar-link" href="MERCADOLIBRE.html">
               <i class="align-middle" data-feather="airplay"></i> <span class="align-middle">MERCADOLIBRE</span>
             </a>
 					</li>
 
-					<li class="sidebar-item">
+					<li class="sidebar-item " >
 						<a class="sidebar-link" href="MOVILNET.html">
               <i class="align-middle" data-feather="headphones"></i> <span class="align-middle">MOVILNET</span>
             </a>
 					</li>
 
-					<li class="sidebar-item">
+					<li class="sidebar-item active">
 						<a class="sidebar-link" href="SIMPATC.html">
               <i class="align-middle" data-feather="message-square" ></i> <span class="align-middle">SIMPLE ATC</span>
             </a>
@@ -87,6 +87,9 @@
             </a>
 					</li>
 
+				
+
+					
 
 					<li class="sidebar-header">
 						TELEMEDICINA
@@ -147,8 +150,6 @@
 			</div>
 		</nav>
 
-
-		
 		
 
 		<div class="main">
@@ -176,54 +177,22 @@
 			<main class="content">
 				<div class="container-fluid p-0">
 
-					<h1 class="h3 mb-3"><strong>Resumen</strong> General</h1>
+					<h1 class="h3 mb-3"><strong>Resumen</strong> SIMPLETV ATC</h1>
 
 					<div class="row">
 						<div class="col-xl-6 col-xxl-5 d-flex">
 							<div class="w-100">
 								<div class="row">
-									<div class="col-sm-6">
-										<div class="card">
-											<div class="card-body">
-												<div class="row">
-													<div class="col mt-0">
-														<h5 class="card-title">ATC</h5>
-													</div>
 
-													<div class="col-auto">
-														<div class="stat text-primary">
-															<i class="align-middle" data-feather="headphones"></i>
-														</div>
-													</div>
-												</div>
-												<h1 class="mt-1 mb-3" id="ATC_GENERAL"></h1>
-												
-											</div>
-										</div>
-										<div class="card">
-											<div class="card-body">
-												<div class="row">
-													<div class="col mt-0">
-														<h5 class="card-title">TELEMEDICINA</h5>
-													</div>
+									
+                                    
 
-													<div class="col-auto">
-														<div class="stat text-primary">
-															<i class="align-middle" data-feather="monitor"></i>
-														</div>
-													</div>
-												</div>
-												<h1 class="mt-1 mb-3" ID="TLM_GENERAL"></h1>
-												
-											</div>
-										</div>
-									</div>
-									<div class="col-sm-6">
+									<div class="col-sm-">
 										<div class="card">
 											<div class="card-body">
 												<div class="row">
 													<div class="col mt-0">
-														<h5 class="card-title">COBRANZAS</h5>
+														<h5 class="card-title">CALIDAD</h5>
 													</div>
 
 													<div class="col-auto">
@@ -232,7 +201,7 @@
 														</div>
 													</div>
 												</div>
-												<h1 class="mt-1 mb-3" ID="COB_GENERAL"></h1>
+												<h1 class="mt-1 mb-3-top" ID="SIMPATC_CAL"></h1>
 												
 											</div>
 										</div>
@@ -240,7 +209,7 @@
 											<div class="card-body">
 												<div class="row">
 													<div class="col mt-0">
-														<h5 class="card-title">VENTAS</h5>
+														<h5 class="card-title">MONITOREOS</h5>
 													</div>
 
 													<div class="col-auto">
@@ -249,7 +218,7 @@
 														</div>
 													</div>
 												</div>
-												<h1 class="mt-1 mb-3" ID="VENT_GENERAL"></h1>
+												<h1 class="mt-1 mb-3"ID="SIMPATC_MON"></h1>
 												
 											</div>
 										</div>
@@ -262,7 +231,7 @@
 							<div class="card flex-fill w-100">
 								<div class="card-header">
 
-									<h5 class="card-title mb-0">Resultados por servicio</h5>
+									<h5 class="card-title mb-0">Resultados por semana</h5>
 								</div>
 								<div class="card-body py-3">
 									<div class="chart chart-sm">
@@ -388,21 +357,23 @@
 
 	<script>
 
-	fetch("https://script.googleusercontent.com/macros/echo?user_content_key=gDOCUdydBa3ltj59qiyyZvizGB1Uat3M-kVdm0w1ttLnigHY1AnyxOoo_4hN0b2XMRcfe7xxdWUsdz7KKLnMvzMlJGHyLPI1m5_BxDlH2jW0nuo2oDemN9CCS2h10ox_1xSncGQajx_ryfhECjZEnJCqrJIWiU7hUCjSHsXhwn-HKPYDEuv6jMaO8ZAKi4-xtcT_iuMokgct5sm5-lHw53AtOxdnVoPwXbnJ0N7xsk4zVmE2ijSN29z9Jw9Md8uu&lib=M6xPB6Za6bm7GcuReNMDXAs5oLE04zqcO")
-	.then(response => response.text())
-	.then(data => document.getElementById("ATC_GENERAL").innerHTML = data);
 
-	fetch("https://script.googleusercontent.com/macros/echo?user_content_key=n3oY3Ym9c27kQNKg_NkNiRnOELkWFMinEg_QHml43Sf1OIlYqC91_YggsPSPm8qs2v5DbYNOmacsdz7KKLnMv2C3PSirymsJm5_BxDlH2jW0nuo2oDemN9CCS2h10ox_1xSncGQajx_ryfhECjZEnIJf6IGNaMDTqKwd_MQni5wZfHV8czHuEPFgeSrjJmQtZ-Hkkx-JrfSe1Lo63frm5l4u9foaMslueDQsKL9LKFmk7CQvFnIRpdz9Jw9Md8uu&lib=M6xPB6Za6bm7GcuReNMDXAs5oLE04zqcO")
+fetch("https://script.googleusercontent.com/macros/echo?user_content_key=qPtCAHRb3zwpYnb_jCxRASMfJCHnokj02vfjULkcVEcG8yi_RsdYY0fY-8hB3x_ykbxcUYE8VbWmVp8PgXlmf854U75J9DZ9m5_BxDlH2jW0nuo2oDemN9CCS2h10ox_1xSncGQajx_ryfhECjZEnHeouExRRq09oKoW3oTROJ1p6U66zpkgl6kvcyJEbLJ_uZi98keeLLqYpXt7VQeoHOL1emjiHOD5DUyUie-JfCrbf6dv6k6Lmdz9Jw9Md8uu&lib=M6xPB6Za6bm7GcuReNMDXAs5oLE04zqcO")
 	.then(response => response.text())
-	.then(data => document.getElementById("COB_GENERAL").innerHTML = data);
+	.then(data => document.getElementById("SIMPATC_CAL").innerHTML = data);
 
-	fetch("https://script.googleusercontent.com/macros/echo?user_content_key=NfOHfoAOZqUAvuCnzLvlIW8bj9tAWykm907tKxcwShRjzA-q-1qRxR7wE83MTe_TnNg8z7PHvUosdz7KKLnMv_LeFUSs8BVpm5_BxDlH2jW0nuo2oDemN9CCS2h10ox_1xSncGQajx_ryfhECjZEnGOixL0KE809Lz4oUGNVXXfLEw_DYoOpA6yRNdi0R6wN0srGzx6z7b9Sa2FXZUtN2VBRaPC7dJEFsqM8Uph7Zt7FXhm24qxzNtz9Jw9Md8uu&lib=M6xPB6Za6bm7GcuReNMDXAs5oLE04zqcO")
+	fetch("https://script.googleusercontent.com/macros/echo?user_content_key=VEGVcsUQtXReXfhiD9_EjNA3u33EydDftUh_wbrzIzTNtkHZtvplHMoA6Y3KfReYt46tI_2C3Bzw-228CyxZJlgK4F1odRmWm5_BxDlH2jW0nuo2oDemN9CCS2h10ox_1xSncGQajx_ryfhECjZEnELfuFw3LO8ud_UDQtj0LiUSlHoSnKsHzFtkA75uel2m67C4vbHsIMCIWQC2JKpzGO_ERFb9WQ_GVUlMwqYpucVQNtEiyBYLFdz9Jw9Md8uu&lib=MqKb4R1VGGZnUYhWkA2AiMSTgvnjTBHNo")
 	.then(response => response.text())
-	.then(data => document.getElementById("TLM_GENERAL").innerHTML = data);
+	.then(data => document.getElementById("SIMPATC_MON").innerHTML = data);
 
-	fetch("https://script.googleusercontent.com/macros/echo?user_content_key=v-ornoXrdh_BD3fB5jiOq1dXpE0mzn8H9xQNLdfWbQ73X9ySjNaY9eDBslh8lCXw7HgmDn18eNmTqoKaHr7GsugWagGYd9J-m5_BxDlH2jW0nuo2oDemN9CCS2h10ox_1xSncGQajx_ryfhECjZEnP1PuJalJA6GWJJruy2YWXif2u9Em51X5pMoVRNocoD8ujZL7VfdmZb5QfihwGNC13vZ4rwZP2AIjRWQYTa8ZhVNqf8RPF-SW9z9Jw9Md8uu&lib=M6xPB6Za6bm7GcuReNMDXAs5oLE04zqcO")
-	.then(response => response.text())
-	.then(data => document.getElementById("VENT_GENERAL").innerHTML = data);
+
+
+
+
+
+
+
+
 
 		document.addEventListener("DOMContentLoaded", function() {
 			var ctx = document.getElementById("chartjs-dashboard-line").getContext("2d");
@@ -473,11 +444,7 @@
 			});
 		});
 	</script>
-
-
-
-
-
+	
 </body>
 
 </html>
